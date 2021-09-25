@@ -4,9 +4,11 @@
 
 <script lang="ts">
 	export let value: CellValue;
+
+	const className = `cell ${!value && 'empty'}`;
 </script>
 
-<div class="cell">{value}</div>
+<div class={className}>{value}</div>
 
 <style>
 	.cell {
@@ -20,12 +22,24 @@
 		width: clamp(30px, 10vw, 70px);
 		height: clamp(30px, 10vw, 70px);
 
-		background: rgba(0, 0, 0, 0.1);
+		background: rgba(0, 0, 0, 0.2);
+		border: solid 2px rgba(0, 0, 0, 0);
 
 		transition: all 0.2s;
 	}
 
-	.cell:hover {
+	.empty {
+		background: rgba(0, 0, 0, 0.1);
+	}
+	
+	.empty:hover {
 		background: rgba(0, 0, 0, 0.2);
+		border: solid 2px darkgray;
+		cursor: pointer;
+	}
+
+	.empty:active {
+		background: lightgray;
+		border: solid 2px lightgray;
 	}
 </style>

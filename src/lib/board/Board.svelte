@@ -5,9 +5,9 @@
 	type GameBoard = [Row, Row, Row];
 
 	const board: GameBoard = [
-		['x', 'x', 'x'],
-		['x', 'x', 'x'],
-		['x', 'x', 'x']
+		['', 'x', 'x'],
+		['x', '', 'x'],
+		['x', '', 'x']
 	];
 </script>
 
