@@ -16,6 +16,7 @@ specifiers:
   svelte: ^3.34.0
   svelte-check: ^2.2.6
   svelte-preprocess: ^4.9.4
+  svelte-web3: ^2.2.0
   tslib: ^2.3.1
   typescript: ^4.4.3
   web3: ^1.5.3
@@ -24,6 +25,7 @@ dependencies:
   '@fontsource/fira-mono': 4.5.0
   '@lukeed/uuid': 2.0.0
   cookie: 0.4.1
+  svelte-web3: 2.2.0
   web3: 1.5.3
 
 devDependencies:
@@ -3365,6 +3367,10 @@ packages:
       svelte: 3.43.0
       typescript: 4.4.3
     dev: true
+
+  /svelte-web3/2.2.0:
+    resolution: {integrity: sha512-sDkKjall2QZc7URhY/lRcW5Mj8V4I8ujJBDbk0eCk8+P5hTguXTriJR8i3QxGjonAEEA2Lqz+SmWCHGUO/Ak1g==}
+    dev: false
 
   /svelte/3.43.0:
     resolution: {integrity: sha512-T2pMPHrxXp+SM8pLLUXLQgkdo+JhTls7aqj9cD7z8wT2ccP+OrCAmtQS7h6pvMjitaZhXFNnCK582NxDpy8HSw==}
